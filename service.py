@@ -17,7 +17,6 @@ START_BUTTON = InlineKeyboardMarkup(
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(bot, message):
-    await message.reply_sticker("CAACAgUAAxkBAAEBcr1hsLH3Nu0-qQpwwWQ7FkF58xnwSgACpAMAAjieoFU-Q-udLfwBUx4E")
     await message.reply_text(
         f""" Hii {message.from_user.mention} i am Anti spam bot i can remove Service Message, command and https links in groups.""", 
         disable_web_page_preview=True,
