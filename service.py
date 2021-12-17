@@ -12,7 +12,7 @@ Client = Client(
 START_BUTTON=InlineKeyboardMarkup([
                     [InlineKeyboardButton("Support Group", url="https://t.me/pyrogrammers"),
                      InlineKeyboardButton("Updats Channel", url="https://t.me/pocketfmhub")],
-                    [InlineKeyboardButton("YouTube", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw)]
+                    [InlineKeyboardButton("YouTube", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw")]
                 ])
 
 @Client.on_message(filters.private & filters.command(["start"]))
