@@ -9,11 +9,11 @@ Client = Client(
     api_hash = os.environ["API_HASH"]
 )
 
-START_BUTTON = InlineKeyboardMarkup(
-        [[
-        InlineKeyboardButton('Uodates Channel', url="https://t.me/pyrogrammers")
-        ]]
-    ) 
+ START_BUTTON=InlineKeyboardMarkup([
+                    [InlineKeyboardButton("Support Group", url="https://t.me/pyrogrammers"),
+                     InlineKeyboardButton("Updats Channel", url="https://t.me/pocketfmhub")],
+                    [InlineKeyboardButton("YouTube", url="https://youtube.com/channel/UC2anvk7MNeNzJ6B4c0SZepw)]
+                ])
 
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(bot, message):
